@@ -1,0 +1,142 @@
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to left top, #453f7c, #113410);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header */
+.headerBar {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.topbar {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.currency, .balance {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Form */
+.content {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+}
+
+.secondTitle {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.formLine {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label {
+  font-size: 1rem;
+}
+
+input, select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 60%;
+}
+
+input:focus, select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+/* Button */
+button {
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #38ef7d, #11998e);
+  transform: scale(1.05);
+}
+
+/* Table */
+.table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+thead {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+tbody tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .formLine {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  input, select {
+      width: 100%;
+  }
+
+  button {
+      width: 100%;
+  }
+}
