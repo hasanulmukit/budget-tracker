@@ -2,6 +2,8 @@
 
 A simple, visually appealing budget tracker app designed to manage your income and expenses efficiently. The app features modern glassmorphism styling, gradient backgrounds, and responsive design for seamless usage across devices.
 
+[![Status: WIP](https://img.shields.io/badge/status-WIP-orange.svg)](https://github.com/hasanulmukit/budget-tracker)
+
 ## Features
 
 - Add transactions with type, name, and amount.
